@@ -23,10 +23,7 @@
             var messageElement = document.getElementById("message");
             // Check for mobile device using navigator.userAgent
             if (/Mobi|Android/i.test(navigator.userAgent)) {
-                messageElement.innerHTML = "Well you should consider getting on PC!";  // Mobile or tablet
-            } else {
-                messageElement.innerHTML = "Look's like you're on PC! Great (:";   // PC
-            }
+                messageElement.innerHTML = "Use pc to see it!";  // Mobile or tablet
         }
 
         window.onload = detectDevice;  // Execute when page loads
