@@ -24,6 +24,7 @@
             // Check for mobile device using navigator.userAgent
             if (/Mobi|Android/i.test(navigator.userAgent)) {
                 messageElement.innerHTML = "Use pc to see it!";  // Mobile or tablet
+            }
         }
 
         window.onload = detectDevice;  // Execute when page loads
