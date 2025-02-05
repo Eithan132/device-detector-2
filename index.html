@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Detection</title>
+    <style>
+        #message {
+            font-size: 24px;
+            font-weight: bold;
+            color: white; /* Set text color to white */
+        }
+        body {
+            background-color: black; /* Optional: Sets background to black to contrast with white text */
+        }
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+
+    <script>
+        function detectDevice() {
+            var messageElement = document.getElementById("message");
+            // Check for mobile device using navigator.userAgent
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                messageElement.innerHTML = "Well you should consider getting on PC!";  // Mobile or tablet
+            } else {
+                messageElement.innerHTML = "Look's like you're on PC! Great (:";   // PC
+            }
+        }
+
+        window.onload = detectDevice;  // Execute when page loads
+    </script>
+</body>
+</html>
