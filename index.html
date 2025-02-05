@@ -8,10 +8,10 @@
         #message {
             font-size: 24px;
             font-weight: bold;
-            color: black; /* Set text color to white */
+            color: white; /* Set text color */
         }
         body {
-            background-color: white; /* Optional: Sets background to black to contrast with white text */
+            background-color: transparent; /* Makes background transparent */
         }
     </style>
 </head>
@@ -23,7 +23,7 @@
             var messageElement = document.getElementById("message");
             // Check for mobile device using navigator.userAgent
             if (/Mobi|Android/i.test(navigator.userAgent)) {
-                messageElement.innerHTML = "Use pc to see it!";  // Mobile or tablet
+                messageElement.innerHTML = "Use PC to see it!";  // Mobile or tablet
             }
         }
 
